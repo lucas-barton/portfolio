@@ -1,0 +1,146 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box; 
+}
+
+
+.background {
+    z-index: -10;
+    position: fixed;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    min-width: 100%;
+    padding: 1rem;
+    position: fixed;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+@media (max-width: 800px){
+    nav{
+        position: absolute;
+    }
+
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .divider-hider{
+        visibility: hidden;
+    }
+
+    .top-space{
+        margin-top: 15rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.75rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+#home {
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    justify-content: space-around;
+    min-height: 70rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+}
+
+
+
+@media (max-width: 1200px){
+    #home {
+        transform: scale(.75);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100rem;
+        background-color: rgba(0, 0, 0, 0);
+        color: red;
+    }
+}
+
+.icons{
+    height: 50%;
+    width: 50%;
+}
+
+.text-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    background-color: rgba(30, 30, 30, .9);
+    border-radius: 10%;
+}
+
+.about-header{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    text-decoration: underline;
+    text-decoration-color: turquoise;
+}
+
+.about-text{
+    color: white;
+    margin: 2rem;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, .5);
+    margin: 5rem 10% 5rem 10%;
+    min-height: 45rem;
+    border-radius: 10%;
+}
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 128, .5);
+    color: green;
+    max-width: 90%;
+    min-width: 80%;
+    margin: 0 10% 5rem 10%;
+    min-height: 50rem;
+    border-radius: 10%;
+}
+
+footer {
+    background-color: black;
+    min-height: 10rem;
+}
