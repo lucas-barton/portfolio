@@ -165,7 +165,7 @@ a:hover {
 
 .wikipedia-search-image {
     text-indent: 2rem;
-    background-image: url(../resources/images/wikipedia-search.png);
+    background-image: url(images/wikipedia-search.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -180,7 +180,7 @@ a:hover {
 
 .random-qutoes-image {
     text-indent: 2rem;
-    background-image: url(../resources/images/random-quotes-gen.png);
+    background-image: url(images/random-quotes-gen.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -194,12 +194,12 @@ a:hover {
 }
 
 .repo {
-    text-indent: 2rem;
-    background-image: url(../public/resources/images/code-picture.jpg);
+    background-image: url("code-picture.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     background-position-y: 2rem;
+     text-indent: 2rem;
     width: 50%;
     transition: transform .2s;
 }
