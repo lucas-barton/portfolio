@@ -55,6 +55,7 @@ li {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 a {
@@ -90,7 +91,17 @@ a:hover {
         background-color: rgba(0, 0, 0, 0);
         color: red;
     }
+
+        .project-cards {
+        min-width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding-bottom: 10rem;
+    }
 }
+
 
 .icons{
     height: 50%;
@@ -101,12 +112,12 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 1.5rem;
     background-color: rgba(30, 30, 30, .9);
-    border-radius: 10%;
+    border-radius: 4rem;
 }
 
-.about-header{
+.h1-text{
     display: flex;
     justify-content: center;
     margin: 1rem;
@@ -125,22 +136,105 @@ a:hover {
     background-color: rgba(128, 128, 128, .5);
     margin: 5rem 10% 5rem 10%;
     min-height: 45rem;
-    border-radius: 10%;
+    border-radius: 5rem;
 }
 
-#portfolio {
-    display: flex;
-    justify-content: center;
+.portfolio {
     background-color: rgba(0, 0, 128, .5);
-    color: green;
     max-width: 90%;
     min-width: 80%;
     margin: 0 10% 5rem 10%;
     min-height: 50rem;
-    border-radius: 10%;
+    border-radius: 5rem;
+}
+
+.js-calculator-image {
+    text-indent: 2rem;
+    background-image: url(../resources/images/js-calculator.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 2rem;
+    width: 50%;
+    transition: transform .2s;
+}
+
+.js-calculator-image:hover {
+    transform: scale(1.5);
+}
+
+.wikipedia-search-image {
+    text-indent: 2rem;
+    background-image: url(../resources/images/wikipedia-search.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 2rem;
+    width: 50%;
+    transition: transform .2s;
+}
+
+.wikipedia-search-image:hover {
+    transform: scale(1.5);
+}
+
+.random-qutoes-image {
+    text-indent: 2rem;
+    background-image: url(../resources/images/random-quotes-gen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 2rem;
+    width: 50%;
+    transition: transform .2s;
+}
+
+.random-qutoes-image:hover {
+    transform: scale(1.5);
+}
+
+.repo {
+    text-indent: 2rem;
+    background-image: url(../public/resources/images/code-picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-position-y: 2rem;
+    width: 50%;
+    transition: transform .2s;
+}
+
+.repo:hover {
+    transform: scale(1.5);
+}
+
+.portfolio-header {
+    padding-top: 5rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    display: -webkit-box; 
+    display: -moz-box;       
+    display: -ms-flexbox;     
+    display: -webkit-flex;  
+}
+
+.project-cards {
+    display: flex;
+    margin-top: 10rem;
+    height: 20rem;
+    width: 20rem;
+    background-color: rgba(30, 30, 30, .9);
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    color: white;
     background-color: black;
     min-height: 10rem;
 }
